@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Music Data Analysis</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="https://static.wixstatic.com/media/12b467_a4ceef0f338c41c7885cb083ea36a00f~mv2_d_1742_1743_s_2.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img style="height:60px; width:auto;" src="https://static.wixstatic.com/media/12b467_a4ceef0f338c41c7885cb083ea36a00f~mv2_d_1742_1743_s_2.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> 
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" style="font-size: 20px;" href="#intro">Introduction</a></li>
+                        <li class="nav-item"><a class="nav-link" style="font-size: 20px;" href="#eda">EDA</a></li>
+                        <li class="nav-item"><a class="nav-link" style="font-size: 20px;" href="#mlearn">Machine Learning</a></li>
+                        <li class="nav-item"><a class="nav-link" style="font-size: 20px;" href="#conclusion">Conclusion</a></li>
+                        <li class="nav-item"><a class="nav-link" style="font-size: 20px;" href="#contact">Predictions</a></li>
+                        <li class="nav-item"><a class="nav-link" style="font-size: 20px;" href="#team">Team</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Scikit-Legends</div>
+                <div class="masthead-heading text-uppercase">Music Data Analysis</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#intro">Tell Me More</a> 
+            </div>
+        </header> 
+        <!-- Introduction -->
+        <!-- Introduction -->
+        <!-- Introduction -->
+        <!-- Introduction -->
+        <!-- Introduction -->
+        <!-- Introduction -->      
+        <!-- Introduction-->
+        <section class="page-section" id="intro">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Introduction</h2>
+                    <h3 class="section-subheading text-muted">Hi There!</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-gears fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Our Work</h4> 
+                        <p class="text-muted">Using a Spotify music dataset from <a href="https://www.kaggle.com/datasets/vicsuperman/prediction-of-music-genre">Kaggle</a>, we aim to provide insights on music and to predict popularity of songs using machine learning! The machine learning models used include SGD Regression, Ridge Regression, and LGBM Regression.
+                      </p> 
+                    </div>
+                    <div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-headphones fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Our Motivation</h4>
+                        <p class="text-muted">By providing visualizations and a direct model that people can use for predicting song popularity, our product will help small artists understand what factors make songs popular. This can also improve the recommendation systems for music-sharing companies and other platforms!
+</p>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-database fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Our Dataset</h4>
+                      <p class="text-muted">This dataset includes 50,000 rows and 18 columns. There are 10 different music genres including 'Electronic', 'Anime', 'Jazz', 'Alternative', 'Country', 'Rap', 'Blues', 'Rock', 'Classical', and 'Hip-Hop'. Other data types included are loudness, speechiness, danceability, instrumentalness, and more provided from Spotify.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-trash fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Data Cleaning</h4>
+                      <p class="text-muted">Features that do not help in predicting song popularity, like identifiers and the date a data sample was obtained, were removed. Data samples with missing values were removed. Missing values in the "tempo" column were imputed with a value of 120. </p>
+                    </div>                  
+                </div>
+            </div>
+        </section>
+        <!-- EDA Grid-->
+        <!-- EDA Grid-->
+        <!-- EDA Grid-->
+        <!-- EDA Grid-->
+        <!-- EDA Grid-->
+        <!-- EDA Grid-->
+        <!-- EDA Grid--> 
+        <section class="page-section bg-light" id="eda">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Exploratory Data Analysis</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" style="height:90%; width:90%; border-radius: 20%" src="https://sell.g2.com/hubfs/correlation-vs-regression.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Correlation Heatmap</div>
+                                <div class="portfolio-caption-subheading text-muted">Multi-Variate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid; mx-auto" style="height:89%; width:89%;border-radius: 20%" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uY2VydHxlbnwwfHwwfHw%3D&w=1000&q=80" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Popularity Distribution</div>
+                                <div class="portfolio-caption-subheading text-muted">Univariate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid; mx-auto" style="height:100%; width:100%; border-radius: 20%" src="https://blog.chartmetric.com/content/images/2021/03/Screen-Shot-2021-03-01-at-19.05.25.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Music Genre Distribution</div>
+                                <div class="portfolio-caption-subheading text-muted">Univariate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid; mx-auto" style="height:97%; width:97%; border-radius: 20%" src="https://www.ypulse.com/wp-content/uploads/2021/11/Screen-Shot-2021-11-17-at-11.20.46-AM-e1637166073898.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Popularity And Music Genre</div>
+                                <div class="portfolio-caption-subheading text-muted">Bivariate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid; mx-auto" style="height:100%; width:100%; border-radius: 20%" src="https://wallpapercave.com/wp/mzixWb9.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Popularity and Key</div>
+                                <div class="portfolio-caption-subheading text-muted">Bivariate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid; mx-auto" style="height:100%; width:100%; border-radius: 20%" src="https://wallpaperaccess.com/full/4879938.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Popularity and Mode</div>
+                                <div class="portfolio-caption-subheading text-muted">Bivariate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Machine Learning-->
+        <!-- Machine Learning-->
+        <!-- Machine Learning-->
+        <!-- Machine Learning-->
+        <!-- Machine Learning-->
+        <!-- Machine Learning-->
+        <!-- Machine Learning-->      
+        <section class="page-section" id="mlearn">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Machine Learning</h2>
+                </div>
+              
+                <div>
+                    <h3 class="section-heading text-uppercase">Ridge Regression</h3>
+                  <div class="row" style="justify-content: center;">
+                    <img style="height:300px; width:auto;" src="https://www.statology.org/wp-content/uploads/2020/11/ridge2.png">
+                    <iframe style="height:420px; width:650px;" src="{{url_for('static', filename='common/test_ridge.html')}}"></iframe>  
+
+                  </div>
+                  <p>Ridge regression is a type of regularized linear regression that includes an L2 penalty. This has the effect of shrinking the coefficients for those input variables that do not contribute much to the prediction task.</p>
+                  <ul>
+                    <li>R2 Score: 0.65364</li>
+                    <li>Mean Absolute Error: 6.76776</li>
+                  </ul>
+                </div>
+                <div>
+                    <h3 class="section-heading text-uppercase">Stochastic Gradient Descent</h3>
+                  <div class="row" style="justify-content: center;">
+                    <img style="height:300px; width:auto;" src="https://editor.analyticsvidhya.com/uploads/58182variations_comparison.png">
+                    <iframe style="height:420px; width:650px;" src="{{url_for('static', filename='common/test_sgd.html')}}"></iframe>
+                  </div>
+                    <p>Stochastic Gradient Descent, or SGD, is an algorithm that can be used for machine learning. SGD works by computing gradients at random data points to greatly reduce the required memory for computations.</p>
+                  <ul>
+                    <li>R2 Score: 0.65365</li>
+                    <li>Mean Absolute Error: 6.76883</li>
+                  </ul>
+                </div>  
+
+              
+                <div>
+                    <h3 class="section-heading text-uppercase">Light Gradient Boosting Machine</h3>
+                  <div class="row" style="justify-content: center;">
+                    <img style="height:300px; width:auto;" src="https://www.researchgate.net/publication/356698772/figure/fig2/AS:1096436418641951@1638422221975/The-architecture-of-Gradient-Boosting-Decision-Tree.png">
+                    <iframe style="height:420px; width:650px;" src="{{url_for('static', filename='common/test_lgbm.html')}}"></iframe> 
+                  </div>
+                    <p>LightGBM is a gradient boosting framework based on decision trees to increase the efficiency of the model and reduces memory usage. LightGBM splits the tree leaf-wise as opposed to other boosting algorithms that grow tree level-wise.</p>
+                  <ul>
+                    <li>R2 Score: 0.66935</li>
+                    <li>Mean Absolute Error: 6.61593</li>
+                  </ul>
+                </div>              
+            </div>
+        </section>
+      
+      
+        <!-- Conclusion-->
+        <!-- Conclusion-->
+        <!-- Conclusion-->
+        <!-- Conclusion-->
+        <!-- Conclusion-->
+        <!-- Conclusion-->      
+        <section class="page-section bg-light" id="conclusion">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Conclusion</h2>
+                    <h3 class="section-subheading text-muted" style="margin-bottom: 1rem;">What we found</h3>
+
+                </div>
+                <p>
+                      From exploratory data analysis, it was found that the factors that make songs popular are not strongly correlated to one particular musical characteristic. However, the variable with the strongest influence on popularity was the music genre.<br><br>
+The three models made predictions on popularity with similar r-squared values and mean absolute errors. The model with the best performance was the LGBM Regressor. LGBM had the highest r-squared value and the lowest mean absolute error.<br><br>
+While the r-squared values have room for improvement, the overall performance is decent considering the task of predicting song popularity. Our regression models can be used to give a rough estimate for how popular a song will be. Try out the section below to see how popular your song might become!
+
+                </p>              
+            </div>
+        </section>
+        <!-- Predictions-->
+        <!-- Predictions-->
+        <!-- Predictions-->
+        <!-- Predictions-->
+        <!-- Predictions-->
+        <!-- Predictions-->
+        <!-- Predictions-->      
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Predictions</h2>
+                </div>
+
+                  
+                    <div class="row align-items-stretch mb-5">
+                      <div class="col-md-4">
+                            <div class="form-group">
+                                <input class="form-control" id="duration-ms" type="number" min="30000" max="5000000" placeholder="Duration (ms) [30K-5M] *" />
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="tempo" type="number" min="10" max="250" placeholder="Tempo (bpm) [10-250] *" />
+                            </div>    
+                            <div class="form-group">
+                                <select id="acousticness" class="form-control">
+                                  <option value="" disabled selected>Select acousticness:</option>
+                                  <option value="0.0">Very Low</option>
+                                  <option value="0.25">Low</option>
+                                  <option value="0.5">Medium</option>
+                                  <option value="0.75">High</option>
+                                  <option value="1.0">Very High</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select id="danceability" class="form-control">
+                                  <option value="" disabled selected>Select danceability:</option>
+                                  <option value="0.0">Very Low</option>
+                                  <option value="0.25">Low</option>
+                                  <option value="0.5">Medium</option>
+                                  <option value="0.75">High</option>
+                                  <option value="1.0">Very High</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select id="energy" class="form-control">
+                                  <option value="" disabled selected>Select energy:</option>
+                                  <option value="0.0">Very Low</option>
+                                  <option value="0.25">Low</option>
+                                  <option value="0.5">Medium</option>
+                                  <option value="0.75">High</option>
+                                  <option value="1.0">Very High</option>
+                                </select>
+                            </div>
+                      </div>
+
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <select id="instrumentalness" class="form-control">
+                                  <option value="" disabled selected>Select instrumentalness:</option>
+                                  <option value="0.0">Very Low</option>
+                                  <option value="0.25">Low</option>
+                                  <option value="0.5">Medium</option>
+                                  <option value="0.75">High</option>
+                                  <option value="1.0">Very High</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select id="liveness" class="form-control">
+                                  <option value="" disabled selected>Select liveness:</option>
+                                  <option value="0.0">Very Low</option>
+                                  <option value="0.25">Low</option>
+                                  <option value="0.5">Medium</option>
+                                  <option value="0.75">High</option>
+                                  <option value="1.0">Very High</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select id="speechiness" class="form-control">
+                                  <option value="" disabled selected>Select speechiness:</option>
+                                  <option value="0.0">Very Low</option>
+                                  <option value="0.25">Low</option>
+                                  <option value="0.5">Medium</option>
+                                  <option value="0.75">High</option>
+                                  <option value="1.0">Very High</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select id="valence" class="form-control">
+                                  <option value="" disabled selected>Select valence:</option>
+                                  <option value="0.0">Very Low</option>
+                                  <option value="0.25">Low</option>
+                                  <option value="0.5">Medium</option>
+                                  <option value="0.75">High</option>
+                                  <option value="1.0">Very High</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select id="loudness" class="form-control">
+                                  <option value="" disabled selected>Select loudness:</option>
+                                  <option value="-40.0">Very quiet</option>
+                                  <option value="-10.0">Quiet</option>
+                                  <option value="-6.0">Medium</option>
+                                  <option value="-3.0">Loud</option>
+                                  <option value="0.0">Very Loud</option>
+                                </select>
+                            </div>
+                      </div>
+                  
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <select id="key" class="form-control">
+                                  <option value="" disabled selected>Select key:</option>
+                                  <option value="0.0">A</option>
+                                  <option value="1.0">A#</option>
+                                  <option value="2.0">B</option>
+                                  <option value="3.0">C</option>
+                                  <option value="4.0">C#</option>
+                                  <option value="5.0">D</option>
+                                  <option value="6.0">D#</option>
+                                  <option value="7.0">E</option>
+                                  <option value="8.0">F</option>
+                                  <option value="9.0">F#</option>
+                                  <option value="10.0">G</option>
+                                  <option value="11.0">G#</option>
+                                  
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select id="mode" class="form-control">
+                                  <option value="" disabled selected>Select mode:</option>
+                                  <option value="1.0">Major</option>
+                                  <option value="0.0">Minor</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select id="has-feat" class="form-control">
+                                  <option value="" disabled selected>Song has feature?</option>
+                                  <option value="1.0">Yes</option>
+                                  <option value="0.0">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select id="music-genre" class="form-control">
+                                  <option value="" disabled selected>Select Music Genre:</option>
+                                  <option value="Electronic">Electronic</option>
+                                  <option value="Anime">Anime</option>
+                                  <option value="Jazz">Jazz</option>
+                                  <option value="Alternative">Alternative</option>
+                                  <option value="Country">Country</option>
+                                  <option value="Rap">Rap</option>
+                                  <option value="Blues">Blues</option>
+                                  <option value="Rock">Rock</option>
+                                  <option value="Classical">Classical</option>
+                                  <option value="Hip-Hop">Hip-Hop</option>
+                                </select>
+                            </div>
+                      </div>
+                      </div>   
+                  
+                  
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" onClick="submitFunction()" type="submit">Predict</button></div>
+
+            </div>
+        
+        </section>  
+             
+        <!-- <div id="model-results" class="text-center section-heading text-uppercase"></div> -->
+        
+        <div id="model-results"></div>
+      
+
+        <!-- Team-->
+        <!-- Team-->
+        <!-- Team-->
+        <!-- Team-->
+        <!-- Team-->
+        <!-- Team-->
+        <!-- Team--> 
+        <!-- Team-->      
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Team</h2>
+                    <h3 class="section-subheading text-muted">Scikit Legends</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" style="object-fit:cover;" src="{{url_for('static', filename='assets/img/team/ej.png')}}" alt="..." />
+                            <h4>Eric</h4>
+                            <p class="text-muted">Instructor</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" style="object-fit:cover;" src="{{url_for('static', filename='assets/img/team/pranavi.png')}}"/>
+                            <h4>Pranavi</h4>
+                            <p class="text-muted">Team Member</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" style="object-fit:cover;" src=
+"{{url_for('static', filename='assets/img/team/tn.jpg')}}" alt="..." />
+                            <h4>Takuma</h4>
+                            <p class="text-muted">Team Member</p>
+                        </div>
+                    </div>
+                </div>
+              <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" style="object-fit:contain;" src="{{url_for('static', filename='assets/img/team/ethan.jpg')}}" alt="..." />
+                            <h4>Ethan</h4>
+                            <p class="text-muted">Team Member</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" style="object-fit:cover;" src="{{url_for('static', filename='assets/img/team/jose.png')}}"
+alt="..." />
+                            <h4>Jose</h4>
+                            <p class="text-muted">Team Member</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" style="object-fit:cover;" src="{{url_for('static', filename='/assets/img/team/nithid.jpg')}}" alt="..." />
+                            <h4>Nithid (Conan)</h4>
+                            <p class="text-muted">Team Member</p>
+                        </div>
+                    </div>
+                </div><strong></strong>
+                <!-- <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">ending paragraph</p></div>
+                </div> -->
+            </div>
+        </section>
+
+
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; AI Camp 2022</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/aicampofficial" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/aicampdotorg/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/organization-x" aria-label="LinkedIn"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='assets/img/close-icon.svg')}}"
+alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Correlation Heatmap</h2>
+                                  
+                                    <iframe src="{{url_for('static', filename='common/correlation_heatmap.html')}}" width="1000" height="720"></iframe>
+                                    <p>A correlation heatmap visualizes the relationship between two numerical variables in a dataset by using colors to represent correlation. This visualization can be used in feature selection to identify highly correlated and uncorrelated variables.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='assets/img/close-icon.svg')}}"
+alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Popularity Distribution</h2>
+
+                                    <iframe src="{{url_for('static', filename='common/popularity_uni.html')}}" width="750" height="470"></iframe>
+                                    <p>This is a histogram of the popularity scores in the dataset. As seen from the figure, the popularity scores range from 0 to 100 with most of the popularity scores lying between 30 to 60.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Music Genres</h2>
+
+                                    <iframe src="{{url_for('static', filename='common/genres_uni.html')}}" width="750" height="470"></iframe>
+                                    <p>This is a bar chart of the music genres in the dataset. The diversity of genres in this dataset is balanced.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Popularity and Music Genre</h2>
+
+                                    <iframe src="{{url_for('static', filename='common/popularity_genre.html')}}" width="750" height="470"></iframe>
+                                    <p>This is a multi-boxplot of popularity and music genre. As we can see from the figure, popularity score varies widely based on music genres.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='assets/img/close-icon.svg')}}"
+alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Popularity and Key</h2>
+
+                                    <iframe src="{{url_for('static', filename='common/popularity_key.html')}}" width="750" height="470"></iframe>
+                                    <p>In music, key represents the notes in a scale a song is performed in. This is a multi-boxplot of popularity and key. As we can see from the figure, popularity score is not influenced greatly by key.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='assets/img/close-icon.svg')}}"  alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Popularity and Mode</h2> 
+
+                                    <iframe src="{{url_for('static', filename='common/popularity_mode.html')}}" width="750" height="470"></iframe>
+                                    <p>In music, mode represents the type of scale a song is performed in, like major or minor. This is a multi-boxplot of popularity and mode. As we can see from the figure, popularity score is not influenced greatly by mode.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{url_for('static', filename='js/scripts.js')}}" ></script>
+    </body>
+</html>
